@@ -1,3 +1,7 @@
+package com.vihanga;
+
+import com.vihanga.utils.Utils;
+
 public class SelectionSort {
     public static void main(String[] args) {
 
@@ -10,7 +14,7 @@ public class SelectionSort {
                     largestIndex=i;
                 }
             }
-            swap(arr,largestIndex,lastUnsortedIndex);
+            Utils.swap(arr,largestIndex,lastUnsortedIndex);
 
         }
 
@@ -22,13 +26,5 @@ public class SelectionSort {
 
     }
 
-    public static void swap (int [] arr,int i, int j){
-        if(arr[i]== arr[j]){
-            return;
-        }
 
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
 }
